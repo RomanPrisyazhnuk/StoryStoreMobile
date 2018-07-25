@@ -1,0 +1,13 @@
+{
+  "apiPrefix": "https://story-store-api.herokuapp.com/",
+  "versionApi": "api/v1/",
+
+  "authentication":{
+    "authScope": "auth/",
+    "signIn": "auth/sign_in/",
+    "signOut": "auth/sign_out/",
+    "validateToken": "auth/validate_token/",
+    "registration": "auth/"
+  }
+}
+
