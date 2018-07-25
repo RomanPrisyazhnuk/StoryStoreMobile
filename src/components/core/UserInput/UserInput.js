@@ -1,7 +1,7 @@
 import { View, TextInput } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
 import { styles } from './styles';
 
 const propTypes = {
@@ -18,19 +18,19 @@ const propTypes = {
 
 export const UserInput = (props) => {
     return (
-      <View style={styles.inputWrapper}>
-          <Icon style={styles.inlineImg} name={props.iconName}/>
-          <TextInput style={styles.input}
-                     value={props.value}
-                     onChangeText={props.onChange.bind(this, props.type)}
-                     placeholder={props.placeholder}
-                     secureTextEntry={props.secureTextEntry}
-                     autoCorrect={props.autoCorrect}
-                     autoCapitalize={props.autoCapitalize}
-                     returnKeyType={props.returnKeyType}
-                     placeholderTextColor='white'
-                     underlineColorAndroid='transparent'/>
-      </View>
+        <View style={styles.inputWrapper}>
+            <Icon style={styles.inlineImg} name={props.iconName}/>
+            <TextInput style={styles.input}
+                value={props.value}
+                onChangeText={props.onChange.bind(this, props.type)}
+                placeholder={props.placeholder}
+                secureTextEntry={props.secureTextEntry}
+                autoCorrect={props.autoCorrect}
+                autoCapitalize={props.autoCapitalize}
+                returnKeyType={props.returnKeyType}
+                placeholderTextColor='white'
+                underlineColorAndroid='transparent'/>
+        </View>
     );
 };
 

@@ -7,7 +7,7 @@ const MainScreen = () => {
         <View style={styles.container}>
             <Text>Main Screendddd</Text>
         </View>
-    )
+    );
 };
 
 export default MainScreen;

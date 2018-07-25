@@ -7,7 +7,7 @@ const RegistrationScreen = () => {
         <View style={styles.container}>
             <Text>Registration Screen</Text>
         </View>
-    )
+    );
 };
 
 export default RegistrationScreen;

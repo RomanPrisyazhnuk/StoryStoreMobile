@@ -2,7 +2,7 @@ import Dimensions from 'Dimensions';
 import { StyleSheet } from 'react-native';
 
 const DEVICE_WIDTH = Dimensions.get('window').width;
-const DEVICE_HEIGHT = Dimensions.get('window').height;
+// const DEVICE_HEIGHT = Dimensions.get('window').height;
 
 export const styles = StyleSheet.create({
     inputWrapper: {

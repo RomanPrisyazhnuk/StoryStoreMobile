@@ -1,9 +1,9 @@
-import { addNavigationHelpers } from 'react-navigation';
 import { addListener } from '../../redux/utils/redux';
+import { addNavigationHelpers } from 'react-navigation';
+import AppNavigator from '../../router';
 import React from 'react';
-import AppNavigator  from '../../router';
 
-const App = ({ dispatch, nav }) =>  {
+const App = ({ dispatch, nav }) => {
     return (
         <AppNavigator
             navigation={addNavigationHelpers({

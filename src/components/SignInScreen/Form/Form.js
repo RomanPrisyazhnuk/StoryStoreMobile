@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import AnimatedButton from '../../core/AnimatedButton';
-import UserInput from '../../core/UserInput';
 import PropTypes from 'prop-types';
 import { styles } from './styles';
+import UserInput from '../../core/UserInput';
 import { View } from 'react-native';
 
 const propTypes = {
@@ -23,32 +23,38 @@ class Form extends Component {
     };
     handleClickButton = () => {
         this.props.signIn('v@v.com', 'aa123456');
-        this.setState({ email: '', password: '' })
+        this.setState({ email: '', password: '' });
     };
     render () {
         return (
-                <View style={styles.container}>
-                    <UserInput onChange={this.handleChangeInput}
-                               iconName='user'
-                               type='email'
-                               value={this.state.email}
-                               placeholder='Type your username'
-                               autoCapitalize={'none'}
-                               returnKeyType={'done'}
-                               autoCorrect={false} />
-                    <UserInput onChange={this.handleChangeInput}
-                               iconName='lock'
-                               type='password'
-                               secureTextEntry={true}
-                               value={this.state.password}
-                               placeholder='Type your password'
-                               returnKeyType={'done'}
-                               autoCapitalize={'none'}
-                               autoCorrect={false}/>
-                    <AnimatedButton text='Login'
-                                    onClick={this.handleClickButton}
-                                    isLoading={this.props.isLoading}/>
-                </View>
+            <View style={styles.container}>
+                <UserInput
+                    onChange={this.handleChangeInput}
+                    iconName='user'
+                    type='email'
+                    value={this.state.email}
+                    placeholder='Type your username'
+                    autoCapitalize={'none'}
+                    returnKeyType={'done'}
+                    autoCorrect={false}
+                />
+                <UserInput
+                    onChange={this.handleChangeInput}
+                    iconName='lock'
+                    type='password'
+                    secureTextEntry={true}
+                    value={this.state.password}
+                    placeholder='Type your password'
+                    returnKeyType={'done'}
+                    autoCapitalize={'none'}
+                    autoCorrect={false}
+                />
+                <AnimatedButton
+                    text='Login'
+                    onClick={this.handleClickButton}
+                    isLoading={this.props.isLoading}
+                />
+            </View>
 
         );
     }
